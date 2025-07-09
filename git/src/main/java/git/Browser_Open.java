@@ -1,5 +1,6 @@
 package git;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -16,6 +17,8 @@ public class Browser_Open {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("http://krishaweb.com/");
+		
+		driver.findElement(By.linkText("Contact Us")).click();
 		
 	}
 }
