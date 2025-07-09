@@ -19,8 +19,12 @@ public class Browser_Open {
 		driver.get("http://krishaweb.com/");
 		
 		driver.findElement(By.linkText("Contact Us")).click();
+<<<<<<< HEAD
+			
+=======
 
 		driver.findElement(By.id("theme_switch")).click();
 		
+>>>>>>> 7ce44510628b102e085fa0d7add582c8fcf7fe94
 	}
 }
