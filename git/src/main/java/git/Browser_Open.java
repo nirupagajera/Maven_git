@@ -18,9 +18,10 @@ public class Browser_Open {
 		driver = new ChromeDriver();
 		driver.get("http://krishaweb.com/");
 		
+		driver.findElement(By.id("theme_switch")).click();
+	
 		driver.findElement(By.linkText("Contact Us")).click();
 
-		driver.findElement(By.id("theme_switch")).click();
 		
 	}
 }
