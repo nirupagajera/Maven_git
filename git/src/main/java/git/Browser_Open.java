@@ -21,7 +21,6 @@ public class Browser_Open {
 		driver.findElement(By.id("theme_switch")).click();
 	
 		driver.findElement(By.linkText("Contact Us")).click();
-
 		
 	}
 }
