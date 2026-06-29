@@ -5,4 +5,4 @@
       -H "Accept: application/vnd.github+json" \
       -H "Authorization: Bearer ${{ secrets.QA_REPO_TOKEN }}" \
       https://api.github.com/repos/nirupagajera/Swagify/actions/workflows/deployment-playwright.yml/dispatches \
-      -d '{"ref":"main"}'
+      -d '{"ref":"main","inputs":{"test_suite":"full"}}'
