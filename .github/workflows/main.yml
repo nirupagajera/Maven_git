@@ -14,8 +14,6 @@ jobs:
       - name: Checkout Maven_git repo
         uses: actions/checkout@v4
 
-      # Your deployment steps should be here
-
       - name: Trigger Swagify Playwright Tests
         if: success()
         run: |
