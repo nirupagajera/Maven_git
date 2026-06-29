@@ -1,5 +1,5 @@
-- name: Trigger Swagify Playwright Tests
-  if: success()
+name: Trigger Swagify Playwright Tests
+if: success()
   run: |
     curl -X POST \
       -H "Accept: application/vnd.github+json" \
