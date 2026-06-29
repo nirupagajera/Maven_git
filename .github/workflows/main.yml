@@ -1,18 +1,24 @@
-name: Maven Git Deployment
+name: Trigger Swagify Automation
 
 on:
   push:
     branches:
       - main
+      - BranchX
+
+  pull_request:
+    branches:
+      - main
+      - BranchX
+
   workflow_dispatch:
 
 jobs:
-  deploy-and-test:
+  trigger-playwright:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Maven_git repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Trigger Swagify Playwright Tests
         run: |
